@@ -1,0 +1,55 @@
+[project]
+name = "earthcare-dggs"
+requires-python = ">= 3.11"
+license = "MIT"
+description = "Converting EarthCARE satellite data to HEALPix DGGS format"
+readme = "README.md"
+dependencies = [
+  "earthcarekit>=0.15",
+  "healpix-geo>=0.0.9",
+  "xdggs>=0.6.0",
+  "xarray>=2025.8.0",
+  "numpy>=2",
+  "numpy-groupies",
+  "scipy",
+  "matplotlib",
+  "cartopy",
+  "pystac-client",
+]
+dynamic = ["version"]
+
+[build-system]
+requires = ["setuptools>=64.0", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["earthcare_dggs"]
+
+[tool.setuptools_scm]
+fallback_version = "9999"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = [
+  "F",   # Pyflakes
+  "E",   # Pycodestyle
+  "I",   # isort
+  "UP",  # Pyupgrade
+  "TID", # tidy imports
+]
+ignore = [
+  "E402",
+  "E501",
+  "E731",
+]
+fixable = ["I", "TID252"]
+extend-safe-fixes = ["TID252"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["earthcare_dggs"]
+
+[tool.ruff.lint.flake8-tidy-imports]
+ban-relative-imports = "all"

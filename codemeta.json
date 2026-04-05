@@ -1,0 +1,60 @@
+{
+  "@context": "https://w3id.org/codemeta/3.0",
+  "@type": ["SoftwareSourceCode", "SoftwareApplication"],
+  "name": "EarthCARE to DGGS",
+  "description": "Python tools and Jupyter notebooks for converting EarthCARE satellite Level 2 data to HEALPix Discrete Global Grid System (DGGS) format.",
+  "license": "https://spdx.org/licenses/MIT",
+  "codeRepository": "https://github.com/annefou/earthcare-dggs",
+  "issueTracker": "https://github.com/annefou/earthcare-dggs/issues",
+  "version": "0.1.0",
+  "dateCreated": "2026-04-05",
+  "dateModified": "2026-04-05",
+  "programmingLanguage": ["Python"],
+  "runtimePlatform": "Python >= 3.11",
+  "softwareRequirements": [
+    "earthcarekit >= 0.15",
+    "healpix-geo >= 0.0.9",
+    "xdggs >= 0.6.0",
+    "xarray >= 2025.8.0",
+    "numpy >= 2",
+    "numpy-groupies",
+    "scipy",
+    "matplotlib",
+    "cartopy"
+  ],
+  "buildInstructions": "https://github.com/annefou/earthcare-dggs#setup",
+  "keywords": [
+    "EarthCARE",
+    "DGGS",
+    "HEALPix",
+    "Earth Observation",
+    "Zarr",
+    "xarray",
+    "satellite data",
+    "atmospheric profiles",
+    "cloud properties",
+    "aerosol"
+  ],
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Anne",
+      "familyName": "Fouilloux",
+      "@id": "https://orcid.org/0000-0002-1784-2920",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "LifeWatch ERIC"
+      }
+    }
+  ],
+  "funding": [
+    {
+      "@type": "Grant",
+      "funder": {
+        "@type": "Organization",
+        "name": "European Space Agency (ESA)"
+      },
+      "name": "GRID4EARTH - Common DGGS for DestinE Copernicus Sentinels Data"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+[workspace]
+channels = ["conda-forge"]
+name = "earthcare-dggs"
+platforms = ["linux-64", "osx-arm64", "win-64"]
+
+[dependencies]
+xarray = ">=2025.8.0"
+numpy = ">=2"
+healpix-geo = ">=0.0.9"
+xdggs = ">=0.6.0"
+matplotlib = ">=3.10"
+cartopy = ">=0.25"
+pystac-client = ">=0.9"
+scipy = ">=1.14"
+numpy_groupies = ">=0.11"
+zarr = ">=3.1"
+h5netcdf = "*"
+
+[pypi-dependencies]
+earthcare-dggs = { path = ".", editable = true }
+earthcarekit = ">=0.15"
+
+[feature.dev.dependencies]
+python = "3.13.*"
+jupyterlab = "*"
+jupyter-resource-usage = "*"
+ipykernel = "*"
+pre-commit = "*"
+
+[feature.docs.dependencies]
+python = "3.13.*"
+jupyter-book = ">=2"
+myst-nb = "*"
+sphinx-book-theme = "*"
+sphinx-design = "*"
+sphinx-copybutton = "*"
+
+[feature.dev.tasks]
+jupyterlab = { cmd = "jupyter lab", cwd = "." }
+
+[feature.docs.tasks]
+build-docs = { cmd = "jupyter-book build", cwd = "." }
+
+[environments]
+dev = ["dev"]
+docs = ["docs"]

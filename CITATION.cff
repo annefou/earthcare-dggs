@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+title: "EarthCARE to DGGS"
+message: "If you use this software, please cite it using these metadata."
+type: software
+version: 0.1.0
+license: MIT
+repository-code: https://github.com/annefou/earthcare-dggs
+url: https://annefou.github.io/earthcare-dggs/
+keywords:
+  - EarthCARE
+  - DGGS
+  - HEALPix
+  - Earth Observation
+  - Zarr
+  - xarray
+  - satellite data
+  - cloud properties
+  - aerosol
+  - atmospheric profiles
+abstract: >-
+  Python tools and Jupyter notebooks for converting EarthCARE satellite
+  Level 2 data to HEALPix Discrete Global Grid System (DGGS) format.
+  Supports MSI 2D swath imagery and ATLID/CPR atmospheric profile data,
+  with proper aggregation strategies for classification, continuous,
+  and uncertainty variables. Uses WGS84 ellipsoid for geodetically
+  correct cell placement.
+authors:
+  - family-names: Fouilloux
+    given-names: Anne
+    orcid: https://orcid.org/0000-0002-1784-2920
+    affiliation: LifeWatch ERIC
