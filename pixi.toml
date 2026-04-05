@@ -39,7 +39,7 @@ sphinx-copybutton = "*"
 jupyterlab = { cmd = "jupyter lab", cwd = "." }
 
 [feature.docs.tasks]
-build-docs = { cmd = "jupyter-book build", cwd = "." }
+build-docs = { cmd = "jupyter-book build --html", cwd = "." }
 
 [environments]
 dev = ["dev"]
