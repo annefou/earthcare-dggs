@@ -20,12 +20,6 @@ h5netcdf = "*"
 earthcare-dggs = { path = ".", editable = true }
 earthcarekit = ">=0.15"
 
-[feature.resample.dependencies]
-pytorch = ">=2.0"
-
-[feature.resample.pypi-dependencies]
-healpix-resample = { path = "../healpix-resample", editable = true }
-
 [feature.dev.dependencies]
 python = "3.13.*"
 jupyterlab = "*"
@@ -48,6 +42,5 @@ jupyterlab = { cmd = "jupyter lab", cwd = "." }
 build-docs = { cmd = "jupyter-book build --html", cwd = "." }
 
 [environments]
-default = ["resample"]
-dev = ["dev", "resample"]
+dev = ["dev"]
 docs = ["docs"]
