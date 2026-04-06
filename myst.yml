@@ -26,6 +26,8 @@ project:
     - file: notebooks/03_msi_to_healpix.ipynb
     - file: notebooks/04_profiles_to_healpix.ipynb
     - file: notebooks/05_dggs_zarr.ipynb
+    - file: notebooks/06_msi_cellpoint.ipynb
+    - file: notebooks/07_msi_cellpoint_s3style.ipynb
 
 site:
   title: "EarthCARE to DGGS"

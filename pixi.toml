@@ -15,10 +15,12 @@ scipy = ">=1.14"
 numpy_groupies = ">=0.11"
 zarr = ">=3.1"
 h5netcdf = "*"
+pytorch = ">=2.0"
 
 [pypi-dependencies]
 earthcare-dggs = { path = ".", editable = true }
 earthcarekit = ">=0.15"
+healpix-resample = { path = "../healpix-resample", editable = true }
 
 [feature.dev.dependencies]
 python = "3.13.*"
