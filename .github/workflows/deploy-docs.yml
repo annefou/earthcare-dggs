@@ -26,6 +26,8 @@ jobs:
       - uses: prefix-dev/setup-pixi@v0.8.1
         with:
           environments: docs
+          pixi-version: v0.63.2
+          frozen: true
 
       - name: Build Jupyter Book (static HTML)
         run: pixi run -e docs build-docs
