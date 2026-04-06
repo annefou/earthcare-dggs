@@ -19,6 +19,10 @@ project:
     content: CC-BY-4.0
   open_access: true
 
+  execute:
+    exclude_patterns:
+      - "notebooks/07_*"
+
   toc:
     - file: intro.md
     - file: notebooks/01_download.ipynb
