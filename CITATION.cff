@@ -3,6 +3,8 @@ title: "EarthCARE to DGGS"
 message: "If you use this software, please cite it using these metadata."
 type: software
 version: 0.1.0
+date-released: "2026-04-23"
+doi: "10.5281/zenodo.19709327"
 license: MIT
 repository-code: https://github.com/annefou/earthcare-dggs
 url: https://annefou.github.io/earthcare-dggs/

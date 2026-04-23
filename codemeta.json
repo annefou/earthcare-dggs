@@ -1,14 +1,17 @@
 {
   "@context": "https://w3id.org/codemeta/3.0",
+  "@id": "https://doi.org/10.5281/zenodo.19709327",
   "@type": ["SoftwareSourceCode", "SoftwareApplication"],
   "name": "EarthCARE to DGGS",
   "description": "Python tools and Jupyter notebooks for converting EarthCARE satellite Level 2 data to HEALPix Discrete Global Grid System (DGGS) format.",
+  "identifier": "https://doi.org/10.5281/zenodo.19709327",
   "license": "https://spdx.org/licenses/MIT",
   "codeRepository": "https://github.com/annefou/earthcare-dggs",
   "issueTracker": "https://github.com/annefou/earthcare-dggs/issues",
   "version": "0.1.0",
+  "datePublished": "2026-04-23",
   "dateCreated": "2026-04-05",
-  "dateModified": "2026-04-05",
+  "dateModified": "2026-04-23",
   "programmingLanguage": ["Python"],
   "runtimePlatform": "Python >= 3.11",
   "softwareRequirements": [
